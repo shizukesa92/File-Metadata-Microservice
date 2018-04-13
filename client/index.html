@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<title>API Project: Image Search Abstraction Layer
+	</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+	<div id="container">
+		<!-- Need to include wrapper ("container" in this case) for footer to stay at bottom -->
+		<div id="header">
+			<h1>API Project: Image Search Abstraction Layer</h1>
+		</div>
+
+		<div id="main">
+			<div id="content">
+				<p>User stories:</p>
+				<ol>
+					<li>I can get the image URLs, alt text and page urls for a set of images relating to a given search string.</li>
+					<li>I can paginate through the responses by adding a ?offset=2 parameter to the URL.</li>
+					<li>I can get a list of the most recently submitted search strings.</li>
+				</ol>
+				<h3>Example query usage:</h3><code><span class ="hostURL"></span>/search/lolcats%20funny?offset=10</code><br/><code><span class = "hostURL"></span>/latest</code>
+				<h3>Example query output:</h3><code>[{
+{"items":[{"htmlTitle":"<b>LOLCats</b> - Ehh.. A Wize Guy Heh?","link":"http://www.lolcats.com/images/u/08/50/lolcatsdotcomrq4lywopmz2tyzsb.jpg","snippet":"LOLCats - Ehh.. A Wize Guy Heh?","image":{"contextLink":"http://www.lolcats.com/popular/26700-ehh-a-wize-guy-heh.html","thumbnailLink":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwC1Qu-zMGPmny2gkfRQHiZOy8-Jp46SUBmmuwdfq0yD6J_lBSzt-xBQ"}},{"htmlTitle":"15 <b>Funniest LOLcats</b> Ever - <b>LOLcats</b> - Oddee","link":"https://www.oddee.com/wp-content/uploads/_media/imgs/articles2/a97873_rsz_lolcat-funny-picture-found-pills-ate-eat.jpg","snippet":"15 Funniest LOLcats Ever - LOLcats - Oddee","image":{"contextLink":"https://www.oddee.com/item_97873.aspx","thumbnailLink":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUpCV_9pgRFqRNWlmouBmHuDUvCzgFpZq5ntYrXmhA7ZbvaDzEs1QT2OM"}},{"htmlTitle":"<b>Lolcats funny</b>","link":"https://static.fjcdn.com/pictures/Lolcats_dd5f1e_755088.jpg","snippet":"Lolcats funny","image":{"contextLink":"https://funnyjunk.com/funny_pictures/589807/Lolcats/","thumbnailLink":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoPwFOQM5B3Kz9G_rxdTcbNJgOCwIfWjfI18i3BvpMTSgcld23WDICYNM"}},{"htmlTitle":"Album: <b>lolcats</b>-<b>funny</b>-picture-my-feet","link":"http://harry.enzoverder.be/cats/lolcats-funny-picture-my-feet.jpg","snippet":"Album: lolcats-funny-picture-my-feet","image":{"contextLink":"http://harry.enzoverder.be/cats/tn/lolcats-funny-picture-my-feet.jpg.html","thumbnailLink":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRg2OORX2HGuFvnDTcG1A-WEg4cG8TNXx4NmVcFhD1Nd-AF-vK7OYYS1Y"}},{"htmlTitle":"lol gatos imagens <b>Funny lolcats</b> wallpaper and background ...","link":"http://images6.fanpop.com/image/photos/33600000/Funny-lolcats-lol-cats-33632373-275-183.jpg","snippet":"lol gatos imagens Funny lolcats wallpaper and background ...","image":{"contextLink":"http://pt.fanpop.com/clubs/lol-cats/images/33632373/title/funny-lolcats-photo","thumbnailLink":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLhm01A3m0kbylO5tZtK-j6uOLDz21JpwaSR7YauH37TtT5sc5ZvNyNTE"}},{"htmlTitle":"Album: <b>lolcats</b>-<b>funny</b>-pictures-requests-in-triplicat","link":"http://harry.enzoverder.be/cats/lolcats-funny-pictures-requests-in-triplicat.jpg","snippet":"Album: lolcats-funny-pictures-requests-in-triplicat","image":{"contextLink":"http://harry.enzoverder.be/cats/tn/lolcats-funny-pictures-requests-in-triplicat.jpg.html","thumbnailLink":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTqjA6q61SXTXNKpYAMQJEv3s2ZhDytTvrHdzNFLi-iMr_RVzscneFchE"}},{"htmlTitle":"Hall of Fame - <b>Lolcats</b> &#39;n&#39; <b>Funny</b> Pictures of Cats - I Can Has ...","link":"https://data.whicdn.com/images/17561072/large.jpg","snippet":"Hall of Fame - Lolcats 'n' Funny Pictures of Cats - I Can Has ...","image":{"contextLink":"https://weheartit.com/entry/17561072","thumbnailLink":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrkiN1unoWUbl59wZmIbjRP44O1l-1u81FMu8NPFqpoHy8zKHk2Jo66aU"}},{"htmlTitle":"<b>LOLCats</b> - Unnamed Kitty","link":"http://www.lolcats.com/images/u/07/36/lolcatsdotcomigweaxmpz0pcyrw0.jpg","snippet":"LOLCats - Unnamed Kitty","image":{"contextLink":"http://www.lolcats.com/popular/10746.html","thumbnailLink":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSDKbfix-UbyUN6tjuE5rPnel3BosL01ZJyBe48FkSxLD9ygOoSilUkJ0"}},{"htmlTitle":"<b>Funniest Lolcats</b> | Most <b>LOLcats</b> are from icanhascheezburger.com or ...","link":"https://s-media-cache-ak0.pinimg.com/originals/f3/26/98/f326986f2db8d547eb746054078235d5.jpg","snippet":"Funniest Lolcats | Most LOLcats are from icanhascheezburger.com or ...","image":{"contextLink":"https://www.pinterest.co.uk/pin/379569074814574514/","thumbnailLink":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAv2XY-OEsKXaN-inNDyGiVIgr8VQUICRIqi4WDoxPR4C5QDLk37mIIeQ"}},{"htmlTitle":"<b>Lolcats</b> - love - LOL at <b>Funny</b> Cat Memes - <b>Funny</b> cat pictures with ...","link":"https://i.chzbgr.com/full/9017347328/h73D77FF3/","snippet":"Lolcats - love - LOL at Funny Cat Memes - Funny cat pictures with ...","image":{"contextLink":"http://icanhas.cheezburger.com/lolcats/tag/love","thumbnailLink":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQu-x4sqHXg-jjoxPez0nihR_cRqy6viNqoRrXwS_b3_bIRYz61419NMGM"}}]}</code>
+				<h3>Example latest output:</h3><code>[{
+{"_id":"5acfe8ce7d6b0a0e606ac5f7","term":"lolcats funny","when":"2018-04-12T23:16:30.207Z"},{"_id":"5acfe92c3cf68012283475f0","term":"lolcats funny","when":"2018-04-12T23:18:04.002Z"},{"_id":"5acfe9413cf68012283475f1","term":"lolcats funny","when":"2018-04-12T23:18:25.872Z"},{"_id":"5acfea7d8744cd37243b91cc","term":"lolcats funny","when":"2018-04-12T23:23:41.755Z"},{"_id":"5acfeb74246f693ffc84801d","term":"lolcats funny","when":"2018-04-12T23:27:48.418Z"},{"_id":"5acfeba98b59142520e4dac3","term":"lolcats funny","when":"2018-04-12T23:28:41.809Z"}]</code>
+			</div>
+		</div>
+
+		<div id="footer">
+			<b>Coded and Designed by Leonard Tye</b>
+		</div>
+	</div>
+</body>
+
+
+</html>

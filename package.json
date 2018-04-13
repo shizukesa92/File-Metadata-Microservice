@@ -1,0 +1,8 @@
+{
+  "name": "File-Metadata-Microservice",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/shizukesa92/File-Metadata-Microservice.git",
+  "author": "Leonard Tye <leonardtye1992@gmail.com>",
+  "license": "MIT"
+}
